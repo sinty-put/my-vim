@@ -7,8 +7,6 @@ return {
   },
   config = function()
     require("flutter-tools").setup({
-      flutter_path = nil,
-      flutter_lookup_cmd = "asdf where flutter",
       fvm = false,
       widget_guides = { enabled = true },
       lsp = {
