@@ -202,7 +202,7 @@ return {
     enabled = is_laravel_project(), -- pastikan membuka laravel project
     -- version = "v2.2.1",
     dependencies = {
-      "nvim-lua/plenary.nvim",
+      "naufalulwan/custom-plenary",
       "nvim-treesitter/nvim-treesitter",
       "tpope/vim-dotenv",
       "nvim-telescope/telescope.nvim",

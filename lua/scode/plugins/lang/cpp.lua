@@ -1,54 +1,54 @@
 return {
-	{
-		"nvim-treesitter/nvim-treesitter",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			opts.ensure_installed = opts.ensure_installed or {}
-			vim.list_extend(opts.ensure_installed, { "cpp", "c" })
-		end,
-	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-		opts = function(_, opts)
-			opts.ensure_installed = opts.ensure_installed or {}
-			vim.list_extend(opts.ensure_installed, { "clangd" })
-		end,
-	},
-	{
-		"jay-babu/mason-nvim-dap.nvim",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			opts.ensure_installed = opts.ensure_installed or {}
-			vim.list_extend(opts.ensure_installed, { "codelldb" })
-		end,
-	},
-	{
-		"naufalulwan/custom-conform",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			local package = "clang-format"
-			vim.list_extend(opts.ensure_installed, { package })
-			opts.formatters_by_ft.cpp = { package }
-			opts.formatters_by_ft.c = { package }
-		end,
-	},
-	{
-		"nvim-neotest/neotest",
-		ft = { "cpp" },
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-neotest/nvim-nio",
-			"antoinemadec/FixCursorHold.nvim",
-			"nvim-lua/plenary.nvim",
-			"alfaix/neotest-gtest",
-		},
-		config = function()
-			require("neotest").setup({
-				adapters = {
-					require("neotest-gtest").setup({}),
-				},
-			})
-		end,
+  {
+    "nvim-treesitter/nvim-treesitter",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      vim.list_extend(opts.ensure_installed, { "cpp", "c" })
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      vim.list_extend(opts.ensure_installed, { "clangd" })
+    end,
+  },
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      vim.list_extend(opts.ensure_installed, { "codelldb" })
+    end,
+  },
+  {
+    "naufalulwan/custom-conform",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      local package = "clang-format"
+      vim.list_extend(opts.ensure_installed, { package })
+      opts.formatters_by_ft.cpp = { package }
+      opts.formatters_by_ft.c = { package }
+    end,
+  },
+  {
+    "nvim-neotest/neotest",
+    ft = { "cpp" },
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "naufalulwan/custom-plenary",
+      "antoinemadec/FixCursorHold.nvim",
+      "naufalulwan/custom-plenary",
+      "alfaix/neotest-gtest",
+    },
+    config = function()
+      require("neotest").setup({
+        adapters = {
+          require("neotest-gtest").setup({}),
+        },
+      })
+    end,
     -- stylua: ignore
     keys = {
       { "<leader>T","",desc="  Test"},
@@ -62,5 +62,5 @@ return {
       { "<Leader>TS", function() require("neotest").run.stop() end, desc = "Stop" },
       { "<leader>rc", "<cmd>terminal<cr>g++ --debug main.cpp -o main<cr>", desc = "Compile Debug main.cpp" },
     },
-	},
+  },
 }

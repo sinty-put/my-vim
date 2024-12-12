@@ -1,7 +1,7 @@
 return {
   "akinsho/pubspec-assist.nvim",
   dependencies = {
-    "nvim-lua/plenary.nvim",
+    "naufalulwan/custom-plenary",
   },
   cmd = {
     "PubspecAssistAddPackage",

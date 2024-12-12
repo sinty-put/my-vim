@@ -236,7 +236,7 @@ M = {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-neotest/nvim-nio",
-      "nvim-lua/plenary.nvim",
+      "naufalulwan/custom-plenary",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-treesitter/nvim-treesitter",
       "andy-bell101/neotest-java",

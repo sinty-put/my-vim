@@ -1,7 +1,7 @@
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
-    "nvim-lua/plenary.nvim",
+    "naufalulwan/custom-plenary",
     "roycrippen4/telescope-treesitter-info.nvim",
   },
   config = function()

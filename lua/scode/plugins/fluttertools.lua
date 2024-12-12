@@ -2,7 +2,7 @@ return {
   "akinsho/flutter-tools.nvim",
   event = "VeryLazy",
   dependencies = {
-    "nvim-lua/plenary.nvim",
+    "naufalulwan/custom-plenary",
     "stevearc/dressing.nvim",
   },
   config = function()
