@@ -9,6 +9,7 @@ return {
     require("flutter-tools").setup({
       fvm = false,
       flutter_path = "C:/src/flutter.git/bin/flutter",
+      flutter_lookup_cmd = nil,
       widget_guides = { enabled = true },
       lsp = {
         settings = {
