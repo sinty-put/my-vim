@@ -34,7 +34,6 @@ return {
             args = { "debug-adapter" },
           }
           dap.configurations.dart = {}
-          require("dap.ext.vscode").load_launchjs()
         end,
       },
     })
