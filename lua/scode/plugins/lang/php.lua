@@ -61,7 +61,7 @@ return {
     end,
   },
   {
-    "pojokcodeid/auto-conform.nvim",
+    "naufalulwan/custom-conform",
     event = "VeryLazy",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, { "pretty-php", "blade-formatter" })
@@ -70,7 +70,7 @@ return {
     end,
   },
   {
-    "pojokcodeid/auto-lint.nvim",
+    "naufalulwan/custom-lint",
     event = "VeryLazy",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, { "phpcs" })

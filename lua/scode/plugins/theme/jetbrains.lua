@@ -1,5 +1,5 @@
 return {
-	"pojokcodeid/darcula-dark.nvim",
+	"naufalulwan/custom-darcula-dark",
 	priority = 1000,
 	lazy = false,
 	config = function()

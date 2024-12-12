@@ -8,7 +8,7 @@ M = {
     end,
   },
   {
-    "pojokcodeid/auto-java-project.nvim",
+    "naufalulwan/custom-java-project",
     event = "VeryLazy",
     config = function()
       require("auto-java-project").setup()
@@ -19,7 +19,7 @@ M = {
   },
   {
     "mfussenegger/nvim-jdtls",
-    dependencies = { "pojokcodeid/auto-jdtls.nvim" },
+    dependencies = { "naufalulwan/custom-jdtls" },
     ft = { "java" },
     -- your opts go here
     opts = {},

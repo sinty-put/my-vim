@@ -1,5 +1,5 @@
 return {
-	"pojokcodeid/auto-conform.nvim",
+	"naufalulwan/custom-conform",
 	dependencies = {
 		"williamboman/mason.nvim",
 		"stevearc/conform.nvim",

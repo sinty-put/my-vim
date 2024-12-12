@@ -18,7 +18,7 @@ local M = {
 		end,
 	},
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			opts.formatters_by_ft = opts.formatters_by_ft or {}

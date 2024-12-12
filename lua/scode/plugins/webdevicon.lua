@@ -1,7 +1,7 @@
 return {
 	"kyazdani42/nvim-web-devicons",
 	lazy = true,
-	dependencies = "pojokcodeid/nvim-material-icon",
+	dependencies = "naufalulwan/custom-material-icon",
 	opts = function()
 		local material_icon_ok, material_icon = pcall(require, "nvim-material-icon")
 		if not material_icon_ok then

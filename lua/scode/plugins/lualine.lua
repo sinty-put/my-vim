@@ -1,6 +1,6 @@
 return {
 	{
-		"pojokcodeid/auto-lualine.nvim",
+		"naufalulwan/custom-lualine",
 		event = { "InsertEnter", "BufRead", "BufNewFile" },
 		dependencies = { "nvim-lualine/lualine.nvim" },
 		opts = {

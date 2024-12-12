@@ -23,7 +23,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			local package = "clang-format"

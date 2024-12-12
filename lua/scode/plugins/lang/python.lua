@@ -118,7 +118,7 @@ local M = {
 		end,
 	},
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			vim.list_extend(opts.ensure_installed, { "flake8", "black", "debugpy" })

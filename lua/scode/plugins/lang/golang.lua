@@ -14,7 +14,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			local package = "gofumpt"
@@ -23,7 +23,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-lint.nvim",
+		"naufalulwan/custom-lint",
 		opts = function(_, opts)
 			opts.linters_by_ft = opts.linters_by_ft or {}
 			vim.list_extend(opts.ensure_installed, { "ast-grep" })

@@ -1,6 +1,6 @@
 return {
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		optional = true,
 		opts = function(_, opts)
@@ -36,7 +36,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-lint.nvim",
+		"naufalulwan/custom-lint",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			vim.list_extend(opts.ensure_installed, { "markdownlint-cli2" })

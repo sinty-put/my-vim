@@ -1,5 +1,5 @@
 return {
-  "pojokcodeid/nvim-juliana",
+  "naufalulwan/custom-juliana",
   lazy = false,
   priority = 1000,
   opts = {},

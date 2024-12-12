@@ -1,5 +1,5 @@
 return {
-	"pojokcodeid/auto-lint.nvim",
+	"naufalulwan/custom-lint",
 	dependencies = {
 		"mfussenegger/nvim-lint",
 		event = "VeryLazy",

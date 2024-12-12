@@ -2,7 +2,7 @@ return {
 	"akinsho/bufferline.nvim",
 	branch = "main",
 	event = { "BufRead", "InsertEnter", "BufNewFile" },
-	dependencies = "pojokcodeid/auto-bufferline.nvim",
+	dependencies = "naufalulwan/custom-bufferline",
 	config = function()
 		vim.opt.termguicolors = true
 		local config = require("auto-bufferline").config()

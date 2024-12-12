@@ -15,9 +15,8 @@ return {
   },
   -- overide lualine
   {
-    "pojokcodeid/auto-lualine.nvim",
+    "naufalulwan/custom-lualine",
     opts = {
-      -- for more options check out https://github.com/pojokcodeid/auto-lualine.nvim
       setColor = "auto",
       setOption = "roundedall",
       setMode = 5,
@@ -25,7 +24,7 @@ return {
   },
   -- overide formatting
   {
-    "pojokcodeid/auto-conform.nvim",
+    "naufalulwan/custom-conform",
     opts = {
       format_on_save = true,
       format_timeout_ms = 5000,

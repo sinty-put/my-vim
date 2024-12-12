@@ -15,7 +15,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-conform.nvim",
+		"naufalulwan/custom-conform",
 		event = "VeryLazy",
 		opts = function(_, opts)
 			opts.formatters_by_ft = opts.formatters_by_ft or {}
@@ -25,7 +25,7 @@ return {
 		end,
 	},
 	{
-		"pojokcodeid/auto-lint.nvim",
+		"naufalulwan/custom-lint",
 		optional = true,
 		opts = function(_, opts)
 			opts.linters_by_ft = opts.linters_by_ft or {}
