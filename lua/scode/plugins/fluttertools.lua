@@ -8,7 +8,7 @@ return {
   config = function()
     require("flutter-tools").setup({
       fvm = false,
-      flutter_path = "$PATH/src/flutter.git/bin/flutter",
+      flutter_path = "C:/src/flutter.git/bin/flutter",
       widget_guides = { enabled = true },
       lsp = {
         settings = {
