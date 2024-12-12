@@ -1,5 +1,5 @@
 return {
-	"naufalulwan/custom-darcula-dark",
+	"naufalulwan/custom-darkula-dark",
 	priority = 1000,
 	lazy = false,
 	config = function()
