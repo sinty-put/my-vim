@@ -30,8 +30,8 @@ return {
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
           dap.adapters.dart = {
             type = "executable",
-            command = vim.fn.stdpath("data") .. "/mason/bin/dart-debug-adapter",
-            args = { "flutter" },
+            command = paths.flutter_bin,
+            args = { "debug-adapter" },
           }
           dap.configurations.dart = {
             {
@@ -40,7 +40,7 @@ return {
               name = "Launch flutter",
               flutterMode = "debug",
               args = { "--debug" },
-              dartSdkPath = "C:src/flutter.git/bincachedart-sdk",
+              dartSdkPath = "C:src/flutter.git/bin/cache/dart-sdk",
               flutterSdkPath = "C:src/flutter.git",
               program = "${workspaceFolder}/lib/main.dart",
               cwd = "${workspaceFolder}",
