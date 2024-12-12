@@ -33,7 +33,19 @@ return {
             command = paths.flutter_bin,
             args = { "debug-adapter" },
           }
-          dap.configurations.dart = {}
+          dap.configurations.dart = {
+            {
+              type = "dart",
+              request = "launch",
+              name = "Launch flutter",
+              flutterMode = "debug",
+              args = { "--debug" },
+              dartSdkPath = "C:src\flutter.git\bincachedart-sdk",
+              flutterSdkPath = "C:src\flutter.git",
+              program = "${workspaceFolder}/lib/main.dart",
+              cwd = "${workspaceFolder}",
+            },
+          }
         end,
       },
     })
