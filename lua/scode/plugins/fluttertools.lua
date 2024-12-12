@@ -40,10 +40,7 @@ return {
               name = "Launch flutter",
               flutterMode = "debug",
               args = { "--debug" },
-              dartSdkPath = "C:src/flutter.git/bin/cache/dart-sdk",
-              flutterSdkPath = "C:src/flutter.git",
               program = "${workspaceFolder}/lib/main.dart",
-              cwd = "${workspaceFolder}",
             },
           }
         end,
