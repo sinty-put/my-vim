@@ -31,7 +31,7 @@ return {
           dap.adapters.dart = {
             type = "executable",
             command = vim.fn.exepath("cmd.exe"),
-            args = { "C:\\src\\flutter.git\\bin\\flutter.bat", "debug_adapter" },
+            args = { "/c", "C:\\src\\flutter.git\\bin\\flutter.bat", "debug_adapter" },
             options = {
               initialize_timeout_sec = 30,
               detached = false,
