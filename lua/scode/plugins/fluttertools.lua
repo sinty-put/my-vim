@@ -30,8 +30,10 @@ return {
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
           dap.adapters.dart = {
             type = "executable",
-            command = vim.fn.exepath("pwsh.exe"),
-            args = { "/c", "C:\\src\\flutter.git\\bin\\flutter.bat", "debug_adapter" },
+            -- command = vim.fn.exepath("cmd.exe"),
+            -- args = { "/c", "C:\\src\\flutter.git\\bin\\flutter.bat", "debug_adapter" },
+            command = "C:\\src\\flutter.git\\bin\\flutter.bat",
+            args = { "debug-adapter" },
             options = {
               initialize_timeout_sec = 30,
               detached = false,
