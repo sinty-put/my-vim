@@ -27,10 +27,11 @@ return {
         exception_breakpoints = {},
         register_configurations = function(paths)
           local dap = require("dap")
+          dap.set_log_level("TRACE")
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
           dap.adapters.dart = {
             type = "executable",
-            command = "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            command = vim.fn.exepath("pwsh.exe"),
             args = { "-Command", "flutter debug_adapter" },
             -- command = "C:\\src\\flutter.git\\bin\\flutter.bat",
             -- args = { "debug-adapter" },
@@ -44,8 +45,8 @@ return {
         end,
       },
       dev_log = {
-        enabled = false,
-        open_cmd = "tabedit",
+        enabled = true,
+        open_cmd = "12vsplit",
         focus_on_open = true,
       },
 
