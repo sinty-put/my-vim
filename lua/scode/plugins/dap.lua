@@ -16,7 +16,7 @@ return {
             "stacks",
             "watches",
           },
-          size = 10, -- columns
+          size = 10,
           position = "bottom",
         },
       },
