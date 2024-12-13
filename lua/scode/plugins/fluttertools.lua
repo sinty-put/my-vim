@@ -28,16 +28,13 @@ return {
         register_configurations = function(paths)
           local dap = require("dap")
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
-          dap.configurations.dart = {
-            {
-              type = "dart",
-              request = "launch",
-              name = "Launch flutter",
-              flutterMode = "debug",
-              args = { "--debug" },
-              program = "${workspaceFolder}/lib/main.dart",
-            },
+          dap.adapters.dart = {
+            type = "executable",
+            command = paths.flutter_bin,
+            args = { "debug-adapter" },
           }
+          dap.configurations.dart = {}
+          require("dap.ext.vscode").load_launchjs()
         end,
       },
     })
