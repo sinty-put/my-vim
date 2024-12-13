@@ -30,8 +30,11 @@ return {
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
           dap.adapters.dart = {
             type = "executable",
-            command = paths.flutter_bin,
-            args = { "debug-adapter" },
+            command = vim.fn.exepath("pwsh.exe"),
+            args = { "/c", paths.flutterBin, "debug_adapter" },
+            options = {
+              detached = false,
+            },
           }
           dap.configurations.dart = {}
           require("dap.ext.vscode").load_launchjs()
