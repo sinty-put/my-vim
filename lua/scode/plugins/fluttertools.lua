@@ -30,7 +30,7 @@ return {
           -- See also: https://github.com/akinsho/flutter-tools.nvim/pull/292
           dap.adapters.dart = {
             type = "executable",
-            command = vim.fn.exepath("pwsh.exe"),
+            command = "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
             args = { "-Command", "flutter debug_adapter" },
             -- command = "C:\\src\\flutter.git\\bin\\flutter.bat",
             -- args = { "debug-adapter" },
