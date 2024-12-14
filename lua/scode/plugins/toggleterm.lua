@@ -23,7 +23,7 @@ return {
     persist_size = true,
     direction = "float",
     close_on_exit = true,
-    shell = vim.o.shell,
+    shell = "powershell.exe",
     float_opts = {
       border = "curved",
       winblend = 0,
