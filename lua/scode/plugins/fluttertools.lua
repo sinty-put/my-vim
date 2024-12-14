@@ -45,7 +45,7 @@ return {
         end,
       },
       dev_log = {
-        enabled = true,
+        enabled = false,
         open_cmd = "10split",
         focus_on_open = true,
       },
