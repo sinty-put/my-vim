@@ -48,7 +48,6 @@ return {
         enabled = true,
         open_cmd = "12split",
         focus_on_open = true,
-        Cmd = {},
       },
 
       outline = {
