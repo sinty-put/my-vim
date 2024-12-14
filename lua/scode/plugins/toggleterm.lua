@@ -23,10 +23,7 @@ return {
     persist_size = true,
     direction = "float",
     close_on_exit = true,
-    shell = "powershell",
-    execs = {
-      { cmd = "ls -l", key = "l", name = "List Files" },
-    },
+    shell = vim.o.shell,
     float_opts = {
       border = "curved",
       winblend = 0,
