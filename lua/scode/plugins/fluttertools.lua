@@ -1,5 +1,5 @@
 return {
-  "akinsho/flutter-tools.nvim",
+  "naufalulwan/custom-flutter-tools",
   event = "VeryLazy",
   dependencies = {
     "naufalulwan/custom-plenary",
@@ -46,8 +46,9 @@ return {
       },
       dev_log = {
         enabled = true,
-        open_cmd = "12vsplit",
+        open_cmd = "12split",
         focus_on_open = true,
+        Cmd = {},
       },
 
       outline = {
