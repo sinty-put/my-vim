@@ -23,7 +23,10 @@ return {
     persist_size = true,
     direction = "float",
     close_on_exit = true,
-    shell = "cmd.exe",
+    shell = "powershell",
+    execs = {
+      { cmd = "ls -l", key = "l", name = "List Files" },
+    },
     float_opts = {
       border = "curved",
       winblend = 0,
