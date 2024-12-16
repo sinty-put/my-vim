@@ -18,7 +18,7 @@ return {
           },
           renamefileswithclasses = "prompt",
           updateimportsonrename = true,
-          enablesnippets = false,
+          enablesnippets = true,
         },
       },
       debugger = {
@@ -49,10 +49,16 @@ return {
         open_cmd = "10split",
         focus_on_open = true,
       },
-
       outline = {
         open_cmd = "30vnew",
         auto_open = false,
+      },
+      decorations = {
+        statusline = {
+          app_version = true,
+          device = true,
+          project_config = false,
+        },
       },
     })
   end,
