@@ -23,7 +23,7 @@ return {
         },
       },
       debugger = {
-        enabled = true,
+        enabled = false,
         run_via_dap = true,
         exception_breakpoints = {},
         register_configurations = function(paths)
@@ -46,7 +46,7 @@ return {
         end,
       },
       dev_log = {
-        enabled = true,
+        enabled = false,
         open_cmd = "10split",
         focus_on_open = true,
       },
