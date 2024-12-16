@@ -4,6 +4,7 @@ return {
   dependencies = {
     "naufalulwan/custom-plenary",
     "stevearc/dressing.nvim",
+    "m00qek/baleia.nvim",
   },
   config = function()
     require("flutter-tools").setup({
