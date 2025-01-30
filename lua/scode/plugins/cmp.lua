@@ -82,6 +82,7 @@ return {
           { name = "buffer" },
           { name = "path" },
           { name = "nvim_lua" },
+          { name = "cmp_tabnine" },
         }),
         formatting = {
           fields = { "kind", "abbr", "menu" },
