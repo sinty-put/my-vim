@@ -1,7 +1,7 @@
 return {
   "tzachar/cmp-tabnine",
   event = "InsertEnter",
-  build = "./install.ps1",
+  build = "pwsh.exe -file .\\install.ps1",
   dependencies = "hrsh7th/nvim-cmp",
   config = function()
     local tabnine = require("cmp_tabnine.config")
