@@ -1,6 +1,6 @@
 return {
   "tzachar/cmp-tabnine",
-  build = "pwsh.exe -file C:\\Users\\822157\\Documents\\PowerShell\\plugin\\install.sh",
+  build = "C:/Users/822157/Documents/PowerShell/plugin/install.sh",
   dependencies = "hrsh7th/nvim-cmp",
   config = function()
     require("cmp_tabnine.config").setup({
