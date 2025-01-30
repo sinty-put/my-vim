@@ -1,5 +1,6 @@
 return {
   "codota/tabnine-nvim",
+  build = "pwsh.exe -file .\\dl_binaries.ps1",
   config = function()
     require("tabnine").setup({
       disable_auto_comment = true,
