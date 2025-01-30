@@ -1,7 +1,6 @@
 return {
   "codota/tabnine-nvim",
-  event = "InsertEnter",
-  build = "C:/Users/822157/Documents/PowerShell/plugin/dl_binaries.ps1",
+  build = "./dl_binaries.ps1",
   config = function()
     require("tabnine").setup({
       disable_auto_comment = true,
