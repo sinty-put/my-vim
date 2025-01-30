@@ -1,6 +1,6 @@
 return {
   "codota/tabnine-nvim",
-  build = "C:\\Users\\822157\\Documents\\PowerShell\\dl_binaries.ps1",
+  build = "C:/Users/822157/Documents/PowerShell/plugin/dl_binaries.ps1",
   config = function()
     require("tabnine").setup({
       disable_auto_comment = true,
