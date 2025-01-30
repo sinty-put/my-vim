@@ -1,5 +1,6 @@
 return {
   "tzachar/cmp-tabnine",
+  event = "InsertEnter",
   build = "C:/Users/822157/Documents/PowerShell/plugin/install.ps1",
   dependencies = "hrsh7th/nvim-cmp",
   config = function()

@@ -22,6 +22,7 @@ return {
       "hrsh7th/cmp-path",
       "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lua",
+      "tzachar/cmp-tabnine",
     },
     opts = function()
       local cmp = require("cmp")
