@@ -4,9 +4,7 @@ return {
   build = "pwsh.exe -file .\\install.ps1",
   dependencies = "hrsh7th/nvim-cmp",
   config = function()
-    local tabnine = require("cmp_tabnine.config")
-
-    tabnine:setup({
+    require("cmp_tabnine.config").setup({
       max_lines = 1000,
       max_num_results = 20,
       sort = true,
