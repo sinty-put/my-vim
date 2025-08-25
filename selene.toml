@@ -1,0 +1,13 @@
+std="lua51+vim"
+exclude = ["lua/mason-vendor/*"]
+
+[rules]
+unused_variable = "allow"
+shadowing = "allow"
+mixed_table = "allow"
+ 
+vim = {
+  lua = true,
+  lua_strict = true,
+  lua_additional_options = "-Wincompatible",
+}
