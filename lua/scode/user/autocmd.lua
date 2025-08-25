@@ -1,12 +1,14 @@
 local api = vim.api
-
--- General Settings
-api.nvim_create_augroup("_general_settings", { clear = true })
+local GENERAL = api.nvim_create_augroup("_general_settings", { clear = true })
 
 api.nvim_create_autocmd("TextYankPost", {
-  group = "_general_settings",
+  group = GENERAL,
+  desc = "Highlight teks setelah yank",
   callback = function()
-    require("vim.highlight").on_yank({ higroup = "Visual", timeout = 200 })
+    local hl = vim.highlight or vim.hl
+    if hl and type(hl.on_yank) == "function" then
+      hl.on_yank({ higroup = "Visual", timeout = 200, on_visual = true })
+    end
   end,
 })
 
@@ -73,7 +75,7 @@ api.nvim_create_autocmd("BufWritePre", {
 })
 
 -- for fix error last close buffer
-vim.api.nvim_create_autocmd({ "QuitPre" }, {
+api.nvim_create_autocmd({ "QuitPre" }, {
   callback = function()
     vim.cmd("NvimTreeClose")
   end,
@@ -87,7 +89,7 @@ autocmd("VimEnter", {
   end,
 })
 
-vim.api.nvim_create_autocmd("FileType", {
+api.nvim_create_autocmd("FileType", {
   pattern = { "help", "alpha", "dashboard", "NvimTree", "Trouble", "lazy", "mason", "neotest-summary" },
   callback = function()
     vim.b.miniindentscope_disable = true
@@ -110,7 +112,7 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175", -- Select mode: block cursor with blinking
 }
 
-vim.api.nvim_create_autocmd("ExitPre", {
+api.nvim_create_autocmd("ExitPre", {
   group = vim.api.nvim_create_augroup("Exit", { clear = true }),
   command = "set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175,a:ver90",
   desc = "Set cursor back to beam when leaving Neovim.",
